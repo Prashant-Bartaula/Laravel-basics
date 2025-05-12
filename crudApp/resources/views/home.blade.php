@@ -43,26 +43,22 @@
             </div>
             <div class="form-wrapper">
                 <div id="header-wrapper">
-                    <h1>User Registration</h1>
+                    <h1>Login</h1>
                     <p>enter your details below</p>
                 </div>
-                <form action="/register" method="POST">
+                <form action="/login" method="POST">
                     <!-- protection against cross site request forgery -->
                     @csrf
     
                     <div class="form-group">
-                        <label for="name">Name <span>*</span></label>
-                        <input type="text" name='name' id="name">
+                        <label for="loginname">Name <span>*</span></label>
+                        <input type="text" name='loginname' id="loginname">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email <span>*</span></label>
-                        <input type="email" name='email' id="email">
+                        <label for="loginpassword">Password <span>*</span></label>
+                        <input type="password" name='loginpassword' id="loginpassword">
                     </div>
-                    <div class="form-group">
-                        <label for="password">Password <span>*</span></label>
-                        <input type="password" name='password' id="password">
-                    </div>
-                    <button type="submit">Register</button>
+                    <button type="submit">Login</button>
                 </form>
             </div>
     </div>

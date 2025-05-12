@@ -20,7 +20,7 @@ class UserController extends Controller
 
             'name'=>['required', 'min:3','max:10', Rule::unique('users', 'name')],
             'email'=>['required', 'email'],
-            'password'=>['required', 'min:8', 'max:200'],
+            'password'=>['required', 'min:4', 'max:20'],
         ]);
 
         //If validation fails, Laravel automatically redirects the user back (usually to the form) with validation error messages.If validation passes, it returns only the validated fields as an associative array, which is stored in $incomingFields.
@@ -40,6 +40,22 @@ class UserController extends Controller
 
     public function logout(){
         auth()->logout();//It removes the user's session and clears the authentication state.
+        return redirect('/');
+    }
+
+    public function login(Request $request){
+        $userData=$request->validate([
+            'loginname'=>'required',
+            'loginpassword'=> 'required',
+        ]);
+
+        //attempt method checks the credentials and logs in the user and returns either true or false.
+        if(auth()->attempt(['name'=>$userData['loginname'], 'password'=>$userData['loginpassword']])){
+
+            //regenerate session token to prevent session fixation attacks.
+                $request->session()->regenerate();
+        }
+
         return redirect('/');
     }
 };
