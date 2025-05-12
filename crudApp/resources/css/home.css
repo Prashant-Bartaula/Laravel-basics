@@ -17,17 +17,27 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     background-color: rgb(247, 247, 242);
+    overflow-y: scroll;
+    padding: 100px 30px;
+    flex-wrap: wrap;
 }
-#form-wrapper{
+
+.form-wrapper{
     border-radius: 20px;
     overflow:hidden;
-    width: 500px;
+    width: 400px;
     box-shadow: 23px 0px 83px 20px rgba(0,0,0,0.1);
 }
 @media screen and (max-width:500px) {
     #form-wrapper{
         width: auto;
+    }
+}
+@media screen and (max-width:900px) {
+    #container{
+        gap:100px;
     }
 }
 #header-wrapper{
