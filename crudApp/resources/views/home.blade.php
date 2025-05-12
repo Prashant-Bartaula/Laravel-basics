@@ -9,11 +9,35 @@
 <body>
 
     @auth 
-    <p>Congrats you are logged in</p>
-    <form action="/logout" method='POST'>
-        @csrf
-        <button>Logout</button>
-    </form>
+    <div id="posts-container">
+        <div id='create_post_container'>
+           <div id="header-wrapper">
+                    <h1>Create new post</h1>
+                    <p>enter details below</p>
+                </div>
+            <form action="/create-post" method="POST">
+                @csrf
+                <input type="text" name="title" placeholder="post title">
+                <textarea name="body" placeholder="body content..."></textarea>
+                <button>Save post</button>
+            </form>
+        </div>
+
+        {{-- display posts  --}}
+        <div style="height: 1px;widows: 100%;background-color: rgb(2, 2, 2, .1); margin: 50px 0;">
+        </div>
+        
+        <div id='posts'>
+            <h1 style="color:rgb(3, 3, 3, 2, .5)">All Posts</h1>
+
+        </div>
+
+        <form action="/logout" method='POST' id='logout_form'>
+            @csrf
+            <button>Logout</button>
+        </form>
+    </div>
+    
 
     @else 
     <div id="container">

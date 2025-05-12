@@ -31,6 +31,14 @@ html, body{
     min-height:500px;
     box-shadow: 23px 0px 83px 20px rgba(0,0,0,0.1);
 }
+#create_post_container{
+    margin:100px auto 0;
+  border-radius: 20px;
+    overflow:hidden;
+    width: 400px;
+    min-height:400px;
+    box-shadow: 23px 0px 83px 20px rgba(0,0,0,0.1);
+}
 @media screen and (max-width:500px) {
     #form-wrapper{
         width: auto;
@@ -70,12 +78,15 @@ form{
     flex-direction: column;
     gap: 10px;
 }
-input{
+input, textarea{
     outline: none;
     border: none;
     box-shadow: 1px 1px 1px 1px rgb(8, 8, 8, .1);
     padding: 10px;
     border-radius: 10px;
+}
+textarea{
+    resize: none;
 }
 span{
     color: red;
@@ -95,4 +106,9 @@ button{
     background-color: #303030;
     color:rgb(247, 247, 242);
     margin-top: 10px;
+}
+#logout_form{
+    position:absolute;
+    top:0;
+    right:20px;
 }
