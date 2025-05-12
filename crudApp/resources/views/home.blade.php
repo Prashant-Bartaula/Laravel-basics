@@ -28,8 +28,14 @@
         </div>
         
         <div id='posts'>
-            <h1 style="color:rgb(3, 3, 3, 2, .5)">All Posts</h1>
+            <h1 style="color:rgb(3, 3, 3,.7);text-align: center;margin-top: 70px;">All Posts</h1>
 
+            @foreach($posts as $post)
+                <div class='post'>
+                    <h2>{{ $post->title }}</h2> 
+                    <p>{{$post->body}}</p>
+                </div>
+            @endforeach
         </div>
 
         <form action="/logout" method='POST' id='logout_form'>

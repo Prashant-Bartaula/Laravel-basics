@@ -6,7 +6,16 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
-    $posts=Post::all();
+
+    // $posts=Post::all();//get all posts
+
+    //get the posts from the logged in user.
+    // $posts=Post::where('user_id', auth()->id())->get();
+
+    $posts=[];
+    if(auth()->check()){
+        $posts=auth()->user()->usersCoolPosts()->latest()->get();
+    }
     return view('home', ['posts'=>$posts]);
 });
 
