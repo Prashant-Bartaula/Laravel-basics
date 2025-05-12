@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "app",
+    "routes",
+    "resources/views",
+    "config"
+  ],
+  "ext": "php,blade.php",
+  "exec": "php artisan serve",
+  "ignore": [
+    "node_modules"
+  ]
+}
