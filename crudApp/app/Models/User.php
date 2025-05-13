@@ -1,5 +1,6 @@
 <?php
 
+//Laravel models (like your User model) are built on Eloquent ORM (Object-Relational Mapping). Eloquent makes it easy to work with the database using PHP objects.
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -17,6 +18,8 @@ class User extends Authenticatable
      *
      * @var list<string>
      */
+
+     //This tells Laravel to allow these fields to be mass assigned, like when creating a new user. mass assigning means assigning multiple fields at once using associative array. 
     protected $fillable = [
         'name',
         'email',
@@ -28,6 +31,7 @@ class User extends Authenticatable
      *
      * @var list<string>
      */
+    //This tells Laravel to exclude these fields from JSON output, like when returning a user from an API:
     protected $hidden = [
         'password',
         'remember_token',

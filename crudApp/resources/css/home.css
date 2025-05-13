@@ -107,18 +107,29 @@ button{
     color:rgb(247, 247, 242);
     margin-top: 10px;
 }
+.post button{
+    margin:0;
+}
 #logout_form{
     position:absolute;
     top:0;
     right:20px;
 }
-#posts{
+.posts{
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
+}
+h2{
+    font-size: 27px;
+    font-family:monospace;
+}
+a{
+    text-decoration: none;
+    color:rgb(247, 247, 242);
 }
 .post{
     padding: 20px;
