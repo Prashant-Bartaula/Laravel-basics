@@ -21,9 +21,8 @@ class PostController extends Controller
         return redirect('/');
     }
 
-
-
     public function showEditScreen(Post $post){
+        //the auth method stores the user object in a cookie or session(server session) so it doesnot always query the databse to fetch the entire user object or the id of the user. auth decodes the sessio tokens and fetches user info from it. On each request, the server uses the cookie to retrieve the session from its storage. By default browser sends cookies with each request.
         if(auth()->user()->id!==$post['user_id']){
             return redirect('/');
         }
@@ -35,7 +34,6 @@ class PostController extends Controller
             return redirect('/')->with('error', 'You are Unauthorized!!!');
         }
         $postData=$request->validate([
-            
             "title"=> "required",
             "body"=>'required'
         ]);

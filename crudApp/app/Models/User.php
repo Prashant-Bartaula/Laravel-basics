@@ -1,6 +1,6 @@
 <?php
 
-//Laravel models (like your User model) are built on Eloquent ORM (Object-Relational Mapping). Eloquent makes it easy to work with the database using PHP objects.
+//Laravel models (like your User model) are built on Eloquent ORM (Object-Relational Mapping). Eloquent makes it easy to work with the database using PHP objects. Laravel models seems empty but  Laravel models are not just data containers — they are powerful gateways between your database and application logic.They provide bunch of helper methods that make it easy to retrieve, insert, update, and delete data from your database using the eloquent ORM.
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -46,12 +46,12 @@ class User extends Authenticatable
     {
         return [
             'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            'password' => 'hashed'
         ];
     }
 
 
     public function UsersCoolPosts(){
-        return $this->hasMany(Post::class, 'user_id');
+        return $this->hasMany(Post::class, 'user_id');//this refers to current User object($user = new User()). hasMany() is a built-in Laravel method that tells Eloquent:“This user has many related records in another table.. We are relating User to Post model with 'userid' as a foreign key of the post table. This returns a relationship object when called.
     }
 }

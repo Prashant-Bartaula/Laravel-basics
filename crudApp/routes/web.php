@@ -14,7 +14,8 @@ Route::get('/', function () {
 
     $posts=[];
     if(auth()->check()){
-        $posts=auth()->user()->usersCoolPosts()->latest()->get();
+        //get the posts from the logged in user.when we call the userCoOlPosts relationship instance all the posts of the logged in user will be returned. we can also perform other tpyes of queries like where, select, latest etc. The get() method is used to execute the query and retrieve the results from the database.
+        $posts=auth()->user()->usersCoolPosts()->latest()->get();//here user is the instance of the user model so we can call the userCoolPosts. 
     }
     return view('home', ['posts'=>$posts, 'allPosts'=>Post::all()]);
 });
