@@ -19,7 +19,7 @@
                         <option value="nep">Nep</option>
                 </select>
                 <input type="text" placeholder="search..." class="px-2 py-1">
-                    <button type="submit" class="bg-red-600 text-white font-bold rounded-lg cursor-pointer relative "><span class="text-3xl px-2 py-1">&#x2315</span></button>
+                    <button type="submit" class=" text-black font-bold rounded-lg cursor-pointer relative "><span class="text-3xl px-2 py-1">&#x2315</span></button>
             </form>
         </div>
     </div>
@@ -29,7 +29,7 @@
                     <!-- hamburger  -->
                      <div class="md:hidden flex justify-end">
                          <button class="cursor-pointer" ><img src="{{ asset('images/hamburger.svg') }}" alt="hamburger" class="w-10 h-10" id="hamburger"></button>
-                     </div>
+                     </div>                     
 
         <ul class="h-0 md:h-fit flex flex-col items-start md:flex-row gap-7 transition-all duration-300 ease-linear" id="navbar-item-wrapper">
             <li class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-500  transition-all duration-150 ease-in mt-5 md:mt-0"><a href="/">Home</a></li>
