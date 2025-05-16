@@ -9,7 +9,7 @@
     {{--@yield is a blade special syntax that allows you to inject clean, dynamic code.  Used in a layout file to define a "placeholder" section where content from other templates will be injected. Like we will use about page inside this page blade with @section and @extendes syntax --}}
 
     <title>@yield('title')</title>
-    @vite('./resources/css/global.css')
+    @vite(['./resources/css/global.css', './resources/js/homepage.js'])
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
