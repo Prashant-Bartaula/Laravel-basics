@@ -7,8 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello i am about 
-
-    </h1>
+    <h1>Hello i am about </h1>
 </body>
-</html>s
+</html>
