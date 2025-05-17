@@ -28,6 +28,6 @@ Route::post('/login', [UserController::class, 'login']);
 
 //blog posts routes
 Route::post('/create-post', [PostController::class, 'createPost']);
-Route::get('/edit-post/{post}', [PostController::class, 'showEditScreen']);
+Route::get('/edit-post/{post}', [PostController::class, 'showEditScreen']);//the post id is passed as a parameter to the showEditScreen method. this is used for model binding. Laravel automatically injects a model instance into your controller method if your route contains a parameter (like a post ID), and your method has a parameter type-hinted with a model class (like Post). so when you define a function like this function ...(Post $post) the $post automatically acts as an instance of the Post model. 
 Route::put('/edit-post/{post}', [PostController::class, 'updatePost']);
 Route::delete('/delete-post/{post}', [PostController::class, 'deletePost']);

@@ -5,45 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@latest"></script>
     @vite('resources/css/home.css')
 </head>
 
 <body>
 
+    {{-- this is a blade directive that checks if the user is logged in --}}
     @auth
-        {{-- message display  --}}
-          @if (session('success'))
+        {{-- message display --}}
+        @if (session('success'))
             <p style="
-                color: green;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                text-align: center;
-                background-color: white;
-                box-shadow: 1px 1px 1px 1px rgb(8, 8, 8, .1);
-                padding: 10px;
-                z-index: 999;">
+                        color: green;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        background-color: white;
+                        box-shadow: 1px 1px 1px 1px rgb(8, 8, 8, .1);
+                        padding: 10px;
+                        z-index: 999;">
                 {{ session('success')}}
             </p>
-            @elseif(session('error'))
-             <p style="
-                color: red;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                background-color: white;
-                text-align: center;
-                box-shadow: 1px 1px 1px 1px rgb(8, 8, 8, .1);
-                padding: 10px;
-                z-index: 999;">
+        @elseif(session('error'))
+            <p style="
+                        color: red;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        background-color: white;
+                        text-align: center;
+                        box-shadow: 1px 1px 1px 1px rgb(8, 8, 8, .1);
+                        padding: 10px;
+                        z-index: 999;">
                 {{ session('error') }}
             </p>
         @endif
 
 
-        <div id="posts-container">
+        <div id="posts-container" >
             <div id='create_post_container'>
                 <div id="header-wrapper">
                     <h1>Create new post</h1>
@@ -57,11 +59,11 @@
                 </form>
             </div>
 
-            {{-- display posts  --}}
+            {{-- display posts --}}
             <div style="height: 1px;widows: 100%;background-color: rgb(2, 2, 2, .1); margin: 50px 0;">
             </div>
 
-            {{-- //your posts  --}}
+            {{-- //your posts --}}
             <div class='posts'>
                 <h1 style="color:rgb(3, 3, 3,.7);text-align: center;margin-top: 70px;">Your Posts</h1>
 
@@ -69,18 +71,28 @@
                     <div class='post'>
                         <h2>{{ $post->title }} by <span style="font-size: 16px; color:gray;">{{ $post->user->name }}</span>
                         </h2>
+
+                        {{-- blade uses this {{}} to prevent against Xss attacks. by preventing to run scripts --}}
                         <p>{{ $post->body }}</p>
                         <div style="display: flex; justify-content: start;align-items: center;flex-wrap:wrap;gap: 10px">
-                            <form action="/delete-post/{{ $post->id }}" method="POST" style="padding:10px">
-                                @csrf
-                                @method('DELETE')
-                                <button>Delete</button>
-                            </form>
-                            <button><a href="/edit-post/{{ $post->id }}">Edit</a></button>
+
+                            {{-- In standard HTML, <form method="DELETE"> is not valid — browsers only support GET and POST
+                                methods in forms. --}}
+
+                                {{-- It adds a hidden input field inside the form like:
+                                <input type="hidden" name="_method" value="DELETE">Laravel reads this hidden input on the server side and treats the request as a DELETE request, even though the browser sends it as a POST. --}}
+                                <form action="/delete-post/{{ $post->id }}" method="POST" style="padding:10px">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button>Delete</button>
+                                </form>
+                                <button><a href="/edit-post/{{ $post->id }}">Edit</a></button>
                         </div>
                     </div>
                 @endforeach
             </div>
+
+            {{-- All posts  --}}
             <div class='posts'>
                 <h1 style="color:rgb(3, 3, 3,.7);text-align: center;margin-top: 70px;">All Posts</h1>
 
@@ -101,6 +113,8 @@
                 @endforeach
             </div>
 
+
+            {{-- we use post for simple action like logout as well to prevent csrf attacks --}}
             <form action="/logout" method='POST' id='logout_form'>
                 @csrf
                 <button>Logout</button>

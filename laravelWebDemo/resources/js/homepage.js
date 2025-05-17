@@ -27,11 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
     //     setTimeout(() => {
     //         popupContainer.style.display = "block";
 
-    //         popupContainer.animate([{ opacity: 0 }, { opacity: 1 }], {
-    //             duration: 300,
-    //             easing: "ease-out",
-    //             fill: "forwards",
-    //         });
+    //         // popupContainer.animate([{ opacity: 0 }, { opacity: 1 }], {
+    //         //     duration: 300,
+    //         //     easing: "ease-out",
+    //         //     fill: "forwards",
+    //         // });
     //         popup.animate(
     //             [
     //                 { transform: "translateY(-20%)", opacity: 0 },

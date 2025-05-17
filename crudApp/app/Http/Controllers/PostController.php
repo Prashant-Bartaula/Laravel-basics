@@ -38,7 +38,7 @@ class PostController extends Controller
             "body"=>'required'
         ]);
 
-        $postData['title']=strip_tags($postData['title']);
+        $postData['title']=strip_tags($postData['title']);//removes html tags and returns plain text 
         $postData['body']=strip_tags($postData['body']);
 
         $post->update($postData);
@@ -47,10 +47,10 @@ class PostController extends Controller
 
     public function deletePost(Post $post){
         if(auth()->user()->id===$post['user_id']){
+            //model instance can get access to orms methods. also the model class Post can also get access to the orms.
             $post->delete();
             return redirect('/')->with('success', 'Post deleted successfully');
         }
-
         return redirect('/')->with('error', 'You are Unauthorized!!!');
     }
 }

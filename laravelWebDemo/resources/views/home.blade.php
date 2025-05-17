@@ -59,7 +59,7 @@
 </div>
 
 <!-- hero section  -->
-<div class="relative flex justify-center items-center max-w-[1500px] h-fit px-2 py-[100px] sm:py-[150px] lg:py-[225px] mx-auto  mb-20 sm:px-6" id="herosection">
+<div class="relative flex justify-center items-center max-w-[1500px] h-fit px-2 py-[100px] sm:py-[150px] lg:py-[225px] mx-auto mb-20 sm:px-6" id="herosection">
 
     <!-- background image hero section  -->
     <!-- <div class="w-full h-full relative  mx-auto">
@@ -85,4 +85,39 @@
         </div>
     </div>
 </div>
+
+<!-- slider and notice section  -->
+<div class="relative w-full mb-20 mx-auto flex flex-col xl:flex-row px-2 sm:px-6">
+
+    <!-- slideshow and notice  -->
+    <div class="grow">
+        asdas
+    </div>
+
+    <!-- executive members -->
+    <div class="flex w-full relative flex-col gap-9 xl:max-w-[350px]">
+
+        <!-- member cards wrapper  -->
+        <div class="flex justify-center flex-row flex-wrap xl:flex-col gap-13 xl:gap-9">
+            <!-- member cards -->
+            <div class="flex w-full max-w-[400px] flex-col gap-4 text-center">
+                    <img src="https://images.unsplash.com/photo-1746802401358-8325ed75ba5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0OHx8fGVufDB8fHx8fA%3D%3D" alt="random-img" class="h-[300px] w-full object-cover">
+                    <h1 class="text-lg  px-3"><a href="#" class="text-blue-500">Hon’ble Prithvi Subba Gurung</a></h1>
+                    <p class="text-sm text-wrap px-3">Hon’ble Minister for Communication and Information Technology</p>
+            </div>
+            <div class="flex w-full max-w-[400px] flex-col gap-4 text-center">
+                    <img src="https://images.unsplash.com/photo-1742314591445-bfacc47276e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D" alt="random-img" class="h-[300px] w-full object-cover">
+                    <h1 class="text-lg px-3"><a href="#" class="text-blue-500">Mr. Dinesh D.C. (Dinesh Raj Dahal)</a></h1>
+                    <p class="text-sm px-3">Executive Chairperson, Film Development Board, Nepal</p>
+            </div>
+            <div class="flex w-full max-w-[400px] flex-col gap-4 text-center">
+                    <img src="https://images.unsplash.com/photo-1747134392591-0c748c9727b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D" alt="random-img" class="h-[300px] w-full object-cover">
+                    <h1 class="text-lg px-3"><a href="#" class="text-blue-500">Mr. Rajesh Kumar Thapa</a></h1>
+                    <p class="text-sm px-3">Member Secretary - Under Secretary (Law), Ministry of Communication and Information Technology</p>
+            </div>
+        </div>
+        <button class="w-fit mx-auto bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer shadow-none!"><a href="#">View All</a></button>
+    </div>
+</div>
+
 @endsection
