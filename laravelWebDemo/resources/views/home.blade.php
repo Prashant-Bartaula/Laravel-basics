@@ -59,7 +59,7 @@
 </div>
 
 <!-- hero section  -->
-<div class="relative flex justify-center items-center max-w-[1500px] h-fit px-2 py-[100px] sm:py-[150px] lg:py-[225px] mx-auto mb-20 sm:px-6" id="herosection">
+<!-- <div class="relative flex justify-center items-center max-w-[1500px] h-fit px-2 py-[100px] sm:py-[150px] lg:py-[225px] mx-auto mb-20 sm:px-6" id="herosection"> -->
 
     <!-- background image hero section  -->
     <!-- <div class="w-full h-full relative  mx-auto">
@@ -73,7 +73,7 @@
     </div> -->
 
     <!-- content  -->
-    <div class="relative text-gray-300 max-w-[500px] md:max-w-[700px] " >
+    <!-- <div class="relative text-gray-300 max-w-[500px] md:max-w-[700px] " >
         <h1 class="text-2xl sm:text-2xl md:text-5xl font-semibold text-center">
             Promoting the Growth of Nepalese <span class="text-blue-400">Cinema</span>
         </h1>
@@ -84,16 +84,24 @@
             <button class="bg-blue-700 text-white px-4 py-2 rounded-lg mt-5 cursor-pointer shadow-none!"><a href="#">Donate</a></button>
         </div>
     </div>
-</div>
+</div> -->
+
+
+    <!-- video player hero section  -->
+     <div class="relative h-fit  w-full sm:max-w-[1300px] mx-auto px-3 sm:px-6">
+        <iframe class="w-full h-[400px] sm:h-[500px] xl:h-[600px]" src="https://www.youtube.com/embed/W4C5BxV1kVM?controls=1"  ></iframe>
+     </div>
+
 
 <!-- slider and notice section  -->
-<div class="relative w-full mb-20 mx-auto flex flex-col xl:flex-row px-2 sm:px-6">
+<div class="relative w-full my-20 mx-auto flex flex-col xl:flex-row px-2 sm:px-6">
 
     <!-- slideshow and notice  -->
     <div class="grow">
         asdas
     </div>
 
+    
     <!-- executive members -->
     <div class="flex w-full relative flex-col gap-9 xl:max-w-[350px]">
 
