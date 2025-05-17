@@ -3,7 +3,18 @@
 @extends('main')
 
 {{-- @section Used in a child view to define what should go into the sections created by @yield in the layout.  --}}
-@section('title', 'Home page') @section('hero')
+
+@section('title', 'Home page') 
+
+@section('hero')
+<style>
+    #herosection{
+    background-image: url('{{ asset("/images/herosection.webp") }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+</style>
 
 <!-- popup on page reload -->
 <div
@@ -48,21 +59,21 @@
 </div>
 
 <!-- hero section  -->
-<div class="relative px-2 pb-20 sm:px-6 h-fit">
+<div class="relative flex justify-center items-center max-w-[1500px] h-fit px-2 py-[100px] sm:py-[150px] lg:py-[225px] mx-auto  mb-20 sm:px-6" id="herosection">
 
     <!-- background image hero section  -->
-    <div class="max-w-[1500px] h-[500px] lg:h-[700px] min-h-[350px] mx-auto">
+    <!-- <div class="w-full h-full relative  mx-auto">
         <img
             src="{{ asset('images/herosection.webp') }}"
             srcset="{{ asset('images/herosection.webp') }} 1x, {{ asset('images/herosection2.webp') }} 2x"
             alt="hero"
             class="w-full h-full object-cover"
             id="hero"
-        />
-    </div>
+    />
+    </div> -->
 
     <!-- content  -->
-    <div class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-gray-300 min-w-full max-w-[700px]" >
+    <div class="relative text-gray-300 max-w-[500px] md:max-w-[700px] " >
         <h1 class="text-2xl sm:text-2xl md:text-5xl font-semibold text-center">
             Promoting the Growth of Nepalese <span class="text-blue-400">Cinema</span>
         </h1>
