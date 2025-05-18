@@ -28,3 +28,12 @@ input, select, button{
     display: block;
 }
 
+/* custom css for pagination swiper js  */
+ .swiper-pagination-bullet {
+    background-color: gray!important; 
+    opacity: 1!important; 
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: white!important; 
+  }
