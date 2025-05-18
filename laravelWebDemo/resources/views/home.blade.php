@@ -154,6 +154,9 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+
+        <!-- notice -->
+
     </div>
 
     <!-- executive members -->
@@ -165,7 +168,7 @@
             <!-- member cards -->
             <div class="flex w-full max-w-[400px] flex-col gap-4 text-center">
                 <img
-                    src="https://images.unsplash.com/photo-1746802401358-8325ed75ba5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0OHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://film.gov.np/media/filmgov/rajesh_thapa_copy.jpg"
                     alt="random-img"
                     class="h-[300px] w-full object-cover"
                 />
@@ -181,7 +184,7 @@
             </div>
             <div class="flex w-full max-w-[400px] flex-col gap-4 text-center">
                 <img
-                    src="https://images.unsplash.com/photo-1742314591445-bfacc47276e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://film.gov.np/media/filmgov/IMG_0416.jpeg"
                     alt="random-img"
                     class="h-[300px] w-full object-cover"
                 />
@@ -196,7 +199,7 @@
             </div>
             <div class="flex w-full max-w-[400px] flex-col gap-4 text-center">
                 <img
-                    src="https://images.unsplash.com/photo-1747134392591-0c748c9727b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://film.gov.np/media/filmgov/dineshDC_copy_copy.jpg"
                     alt="random-img"
                     class="h-[300px] w-full object-cover"
                 />
