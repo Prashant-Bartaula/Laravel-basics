@@ -30,7 +30,7 @@
     >
         <!-- cross button  -->
         <button
-            class="absolute top-3 right-4 text-xl text-gray-800 hover:text-black cursor-pointer"
+            class="absolute top-3 right-4 text-xl shadow-none! text-gray-800 hover:text-black cursor-pointer"
             id="popup-close-button"
         >
             <img
@@ -92,8 +92,10 @@
     ></iframe>
 </div>
 
+
 <!-- horizontal line  -->
 <div class="w-full h-[3px] my-10 bg-gray-300"></div>
+
 
 <!-- slider and notice section  -->
 <div
@@ -101,7 +103,7 @@
 >
     <!-- slideshow and notice  -->
     <div
-        class="relative grow overflow-x-hidden pb-[100px] xl:pr-[20px] xl:pb-0"
+        class="relative grow overflow-x-hidden pb-[90px] xl:pr-[20px] xl:pb-0"
     >
         <!-- slideshow -->
         <div class="swiper mySwiper w-full h-fit overflow-hidden">
@@ -158,10 +160,10 @@
         <!-- notices -->
         <div class="mt-10 flex flex-wrap">
             <!-- about film board description -->
-            <div class="flex-1/2 p-3">
-                <div class="rounded-md overflow-hidden shadow-md h-fit overflow-ellipsis">
+            <div class="lg:flex-1/2 py-7 px-2 lg:p-3 max-h-[600px] overflow-scroll overflow-ellipsis">
+                <div class="rounded-md shadow-md h-fit relative">
                     <h1 class="px-3 py-2 bg-gray-100 text-xl font-semibold">Film development board</h1>
-                    <div class="py-8 px-5 space-y-5 text-base text-wrap text-gray-600 font-light tracking-wide">
+                    <div class="pt-8 pb-15 px-5 space-y-5 text-base text-wrap text-gray-600 font-light tracking-wide">
                         <p class="break-all">
                             Film Development Board (FDB) is established on 30
                             June 2000 by the Government of Nepal according to
@@ -187,24 +189,36 @@
                             therefore, the safeguard
                         </p>
                     </div>
-                    <button class="m-5 shadow-none! text-blue-500"><a href="#">Read more</a></button>
+                    <button class="absolute right-5 bottom-5 shadow-none! text-blue-500"><a href="#">Read more</a></button>
                 </div>
             </div>
 
             <!-- notices section  -->
-             <div>
-                <!-- titles  -->
-                <div class="">
+            <div class="lg:flex-1/2 py-9 px-2 lg:p-3">
+                 <!-- titles  -->
+                <div class="relative w-full">
+                    <ul class="flex overflow-scroll gap-2" id="notice-link-items">
+                            <li class="px-2 py-2 transition-all duration-150 ease-linear hover:border border-black text-blue-500 text-lg font-light cursor-pointer current" id="notice">Notice</li>
+                            <li class="px-2 py-2 hover:border border-black text-blue-500 text-lg font-light cursor-pointer " id="press release">Press release</li>
+                            <li class="px-2 py-2 hover:border border-black text-blue-500 text-lg font-light cursor-pointer " id="events">Events</li>
+                    </ul>
+                </div>
+
+                <!-- notice display  -->
+                <div id="notices" class="flex flex-col gap-8 py-5">
 
                 </div>
-             </div>
 
-            <div class="flex-1/2 p-3"></div>
+                <!-- all notices select button  -->
+                <button class="block w-fit mt-5 mx-auto  bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer shadow-none" id="view-all-notice">
+                    view all notices
+                </button>
+            </div>
         </div>
     </div>
 
     <!-- executive members -->
-    <div class="flex w-full relative flex-col gap-9 xl:max-w-[350px]">
+    <div class="flex w-full relative flex-col gap-9 xl:min-w-[330px]">
         <!-- member cards wrapper  -->
         <div
             class="flex justify-center flex-row flex-wrap xl:flex-col gap-13 xl:gap-9"
@@ -263,5 +277,7 @@
         </button>
     </div>
 </div>
+
+
 
 @endsection

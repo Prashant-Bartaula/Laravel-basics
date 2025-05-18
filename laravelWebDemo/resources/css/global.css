@@ -37,3 +37,8 @@ input, select, button{
   .swiper-pagination-bullet-active {
     background-color: white!important; 
   }
+
+/* css for notices  */
+#notice-link-items li.current{
+  border:1px solid black;
+}
