@@ -93,7 +93,7 @@
 </div>
 
 <!-- horizontal line  -->
- <div class="w-full h-[3px] my-10 bg-gray-300"></div>
+<div class="w-full h-[3px] my-10 bg-gray-300"></div>
 
 <!-- slider and notice section  -->
 <div
@@ -101,7 +101,7 @@
 >
     <!-- slideshow and notice  -->
     <div
-        class="relative grow overflow-x-hidden pb-[100px] xl:pr-[50px] xl:pb-0"
+        class="relative grow overflow-x-hidden pb-[100px] xl:pr-[20px] xl:pb-0"
     >
         <!-- slideshow -->
         <div class="swiper mySwiper w-full h-fit overflow-hidden">
@@ -155,8 +155,52 @@
             <div class="swiper-pagination"></div>
         </div>
 
-        <!-- notice -->
+        <!-- notices -->
+        <div class="mt-10 flex flex-wrap">
+            <!-- about film board description -->
+            <div class="flex-1/2 p-3">
+                <div class="rounded-md overflow-hidden shadow-md h-fit overflow-ellipsis">
+                    <h1 class="px-3 py-2 bg-gray-100 text-xl font-semibold">Film development board</h1>
+                    <div class="py-8 px-5 space-y-5 text-base text-wrap text-gray-600 font-light tracking-wide">
+                        <p class="break-all">
+                            Film Development Board (FDB) is established on 30
+                            June 2000 by the Government of Nepal according to
+                            the existed Motion Picture (Production, Exhibition
+                            and Distribution) Act amended on 20th November 1991.
+                        </p>
+                        <p class="break-all">
+                            The constitution of the Film Development Board was
+                            with the Government’s deep interest in development
+                            and promotion of motion picture sector in Nepal. It
+                            has obviously created an environment of supporting
+                            for the promotion of differential aspect of motion
+                            picture in Nepal. The Board thus, is indeed a
+                            liaison to facilitate the conceptualisation, making,
+                            distribution and exhibition of films in Nepal. It
+                            also attempts abridging the gap between the film
+                            entrepreneurship and the government processes.
+                            However, the Board is bound to take care of safety
+                            of the people and support to interest for the
+                            inspiring films of the common populace. The Board is
+                            in reality a balance among the people at large,
+                            government and the process of filmmaking. It is
+                            therefore, the safeguard
+                        </p>
+                    </div>
+                    <button class="m-5 shadow-none! text-blue-500"><a href="#">Read more</a></button>
+                </div>
+            </div>
 
+            <!-- notices section  -->
+             <div>
+                <!-- titles  -->
+                <div class="">
+
+                </div>
+             </div>
+
+            <div class="flex-1/2 p-3"></div>
+        </div>
     </div>
 
     <!-- executive members -->
