@@ -19,7 +19,7 @@
                         <option value="nep">Nep</option>
                 </select>
                 <input type="text" placeholder="search..." class="px-2 py-1">
-                    <button type="submit" class=" text-black font-bold rounded-lg cursor-pointer relative "><span class="text-3xl px-2 py-1">&#x2315</span></button>
+                    <button type="submit" class=" text-black font-bold rounded-lg cursor-pointer relative "><span class="text-3xl">&#x2315</span></button>
             </form>
         </div>
     </div>

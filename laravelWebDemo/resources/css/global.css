@@ -17,6 +17,17 @@ input, select, button{
   border: none;
   box-shadow: inset 0 0 0 1px #c4c4c4;
 }
+button{
+  background-color: rgb(46, 45, 45);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button[type='submit']{
+  padding: 2px 10px!important;
+}
+
 @media screen and (width<350px){
   img{
     width: 100%;
@@ -41,4 +52,30 @@ input, select, button{
 /* css for notices  */
 #notice-link-items li.current{
   border:1px solid black;
+}
+
+
+/* //shots in nepal animation  */
+.scroller_inner{
+  animation: scroll 20s forwards linear infinite;
+  animation-play-state: running;
+  transition:.3s linear;
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.scroller_inner:hover{
+  animation-play-state: paused;;
+}
+.scroll-item img{
+  filter:grayscale(100%);
+  transition:.25s linear;
+}
+.scroll-item:hover img{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  cursor: pointer;
 }

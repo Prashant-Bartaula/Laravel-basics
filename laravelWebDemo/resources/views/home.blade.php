@@ -92,19 +92,15 @@
     ></iframe>
 </div>
 
-
 <!-- horizontal line  -->
 <div class="w-full h-[3px] my-10 bg-gray-300"></div>
 
-
 <!-- slider and notice section  -->
 <div
-    class="relative w-full my-30 mx-auto flex flex-col xl:flex-row px-2 sm:px-6"
+    class="relative w-full my-25 mx-auto flex flex-col xl:flex-row px-2 sm:px-6"
 >
     <!-- slideshow and notice  -->
-    <div
-        class="relative grow overflow-x-hidden pb-[90px] xl:pr-[20px] xl:pb-0"
-    >
+    <div class="relative grow overflow-x-hidden pb-[90px] xl:pr-[20px] xl:pb-0">
         <!-- slideshow -->
         <div class="swiper mySwiper w-full h-fit overflow-hidden">
             <div class="swiper-wrapper">
@@ -160,10 +156,16 @@
         <!-- notices -->
         <div class="mt-10 flex flex-wrap">
             <!-- about film board description -->
-            <div class="lg:flex-1/2 py-7 px-2 lg:p-3 max-h-[600px] overflow-scroll overflow-ellipsis">
+            <div
+                class="lg:flex-1/2 py-7 px-2 lg:p-3 max-h-[600px] overflow-scroll overflow-ellipsis"
+            >
                 <div class="rounded-md shadow-md h-fit relative">
-                    <h1 class="px-3 py-2 bg-gray-100 text-xl font-semibold">Film development board</h1>
-                    <div class="pt-8 pb-15 px-5 space-y-5 text-base text-wrap text-gray-600 font-light tracking-wide">
+                    <h1 class="px-3 py-2 bg-gray-100 text-xl font-semibold">
+                        Film development board
+                    </h1>
+                    <div
+                        class="pt-8 pb-15 px-5 space-y-5 text-base text-wrap text-gray-600 font-light tracking-wide"
+                    >
                         <p class="break-all">
                             Film Development Board (FDB) is established on 30
                             June 2000 by the Government of Nepal according to
@@ -189,28 +191,51 @@
                             therefore, the safeguard
                         </p>
                     </div>
-                    <button class="absolute right-5 bottom-5 shadow-none! text-blue-500"><a href="#">Read more</a></button>
+                    <button
+                        class="absolute right-5 bottom-5 shadow-none! text-blue-500"
+                    >
+                        <a href="#">Read more</a>
+                    </button>
                 </div>
             </div>
 
             <!-- notices section  -->
             <div class="lg:flex-1/2 py-9 px-2 lg:p-3">
-                 <!-- titles  -->
+                <!-- titles  -->
                 <div class="relative w-full">
-                    <ul class="flex overflow-scroll gap-2" id="notice-link-items">
-                            <li class="px-2 py-2 transition-all duration-150 ease-linear hover:border border-black text-blue-500 text-lg font-light cursor-pointer current" id="notice">Notice</li>
-                            <li class="px-2 py-2 hover:border border-black text-blue-500 text-lg font-light cursor-pointer " id="press release">Press release</li>
-                            <li class="px-2 py-2 hover:border border-black text-blue-500 text-lg font-light cursor-pointer " id="events">Events</li>
+                    <ul
+                        class="flex overflow-scroll gap-2"
+                        id="notice-link-items"
+                    >
+                        <li
+                            class="px-2 py-2 transition-all duration-150 ease-linear hover:border border-black text-blue-500 text-lg font-light cursor-pointer current"
+                            id="notice"
+                        >
+                            Notice
+                        </li>
+                        <li
+                            class="px-2 py-2 hover:border border-black text-blue-500 text-lg font-light cursor-pointer"
+                            id="press release"
+                        >
+                            Press release
+                        </li>
+                        <li
+                            class="px-2 py-2 hover:border border-black text-blue-500 text-lg font-light cursor-pointer"
+                            id="events"
+                        >
+                            Events
+                        </li>
                     </ul>
                 </div>
 
                 <!-- notice display  -->
-                <div id="notices" class="flex flex-col gap-8 py-5">
-
-                </div>
+                <div id="notices" class="flex flex-col gap-8 py-5"></div>
 
                 <!-- all notices select button  -->
-                <button class="block w-fit mt-5 mx-auto  bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer shadow-none" id="view-all-notice">
+                <button
+                    class="block w-fit mt-5 mx-auto bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer shadow-none"
+                    id="view-all-notice"
+                >
                     view all notices
                 </button>
             </div>
@@ -278,6 +303,71 @@
     </div>
 </div>
 
+<!-- horizontal line  -->
+<div class="w-full h-[3px] bg-gray-300"></div>
 
+<!-- shots in nepal  -->
+<div class="my-20 px-3 lg:px-6 text-center">
+    <h1 class="text-center text-3xl font-semibold">Shots in Nepal</h1>
+
+    <!-- infinte slider  -->
+    <div
+        class="mt-5 scroller overflow-hidden max-w-[1200px] mx-auto mask-x-from-85% mask-x-to-90%"
+        data-animated="true"
+    >
+        <ul
+            class="scroller_inner flex flex-nowrap gap-4 w-max"
+            data-speed="slow"
+        >
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+                <a href="#"
+                    ><img
+                        src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8FFJNBaIXvhEwqXXw40rYYDci8jPlYxWfy9082flliYoZ-SqqZjy0az-G5rIWuSJp2pn7xQ"
+                        alt="fim-image"
+                        class="object-cover h-[300px] w-[200px] rounded-sm"
+                /></a>
+                <h1 class="text-center font-normal text-md">Oppenheimer</h1>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+                <a href="#"
+                    ><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngBJ0B7UDrLUkDlp6DCQLsEYuWR-DiHwbnxFFCniB3HiP3f3NZmR1-lKSC34ge6YXu4LX"
+                        alt="fim-image"
+                        class="object-cover h-[300px] w-[200px] rounded-sm"
+                /></a>
+                <h1 class="text-center font-normal text-md">Interstellar</h1>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+                <a href="#"
+                    ><img
+                        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfE_qrYMBZ_JB8om-34WGaZARhpX26yWRttqIDvn4_7l--UzX8mxKcPrc59IcvTpEA_G8gPA"
+                        alt="fim-image"
+                        class="object-cover h-[300px] w-[200px] rounded-sm"
+                /></a>
+               <h1 class="text-center font-normal text-md">Dark Knight</h1>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+                <a href="#"
+                    ><img
+                        src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSe99rkQPNs3ZkNLDnAwcq6r0UzesiT64NqSztuvHKUJUnsrcONbFX7qJg_crnLW7BBb3mkZg"
+                        alt="fim-image"
+                        class="object-cover h-[300px] w-[200px] rounded-sm"
+                /></a>
+               <h1 class="text-center font-normal text-md">Dunkirk</h1>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+                <a href="#"
+                    ><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuIimiy5VfKgKUrZCzGboJGE9Vlgbif0Ac1L2GTYwdLStF4OEI76DmliPA9SkKqPEzpGPx"
+                        alt="fim-image"
+                        class="object-cover h-[300px] w-[200px] rounded-sm"
+                /></a>
+              <h1 class="text-center font-normal text-md">Prestige</h1>
+            </li>
+        </ul>
+    </div>
+
+    <button class="mt-5">View all Movies</button>
+</div>
 
 @endsection
