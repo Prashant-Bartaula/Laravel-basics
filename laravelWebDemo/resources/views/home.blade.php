@@ -370,4 +370,37 @@
     <button class="mt-5">View all Movies</button>
 </div>
 
+<!-- horizontal line  -->
+<div class="w-full h-[3px] bg-gray-300"></div>
+
+<!-- video gallery -->
+ <div class="my-20 px-3 lg:px-6 max-w-[1350px] mx-auto text-center">
+        <h1 class="text-center text-3xl font-semibold">Gallery</h1>
+
+        <div class="mt-5 flex flex-wrap justify-start  sm:justify-center gap-5">
+
+            <!-- images outer -->
+            <div class="gallery-image-outer h-[350px] w-[370px] overflow-hidden" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP1R4rsQTxBLT2GGlB-R4jlJwFxVJU5yE4g4eyDG0xd8RB1PQaG2fBC9AlHBz3XGEyCEDd3g" alt="random-img" class="object-cover h-full w-full">
+            </div>
+            <!-- images outer -->
+            <div class="gallery-image-outer h-[350px] w-[370px] overflow-hidden" >
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz9WA7ZHoAJ8gnnRBZfo2UD1ksU-uPTbVz7coHBiXKkajQQ2oZOQ1kxQnG7bDFCNhmbyQmtg" alt="random-img" class="object-cover h-full w-full">
+            </div>
+            <!-- images outer -->
+            <div class="gallery-image-outer h-[350px] w-[370px] overflow-hidden" >
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBKYVSIZBWxZrZs3iep3ljYAMsbQ8CwPoF85Y2ARjFe3dsd4v1u4F--BDc1eiFkrZZD7r50Q" alt="random-img" class="object-cover h-full w-full">
+            </div>
+            <!-- images outer -->
+            <div class="gallery-image-outer h-[350px] [370px] overflow-hidden" >
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZKMRwkz6Z9-f7tvwTVaTk6je4GHZm0IhQUP4vmU23inyMRCKawom86WntELZHOhhAD2XR" alt="random-img" class="object-cover h-full w-full">
+            </div>
+            <!-- images outer -->
+            <div class="gallery-image-outer h-[350px] [370px] overflow-hidden" >
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSf3VNRyBdlRn-Iv9YdLFPM-0aTXC_-AI4MjzxhFES_KEWNpBn6Rrr1zpXEqC1LoY6-mgnk" alt="random-img" class="object-cover h-full w-full">
+            </div>
+            
+        </div>
+ </div>
+
 @endsection

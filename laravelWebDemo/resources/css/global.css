@@ -59,7 +59,7 @@ button[type='submit']{
 .scroller_inner{
   animation: scroll 20s forwards linear infinite;
   animation-play-state: running;
-  transition:.3s linear;
+  transition:all .3s linear;
 }
 @keyframes scroll {
   to {
@@ -78,4 +78,14 @@ button[type='submit']{
   transform: scale(1.1);
   filter: grayscale(0%);
   cursor: pointer;
+}
+
+/* gallery images  */
+.gallery-image-outer img{
+  transition:all .3s ease-in-out;
+  transform-origin: center center;
+  cursor: pointer;
+}
+.gallery-image-outer:hover img{
+  transform: scale(1.3);
 }
