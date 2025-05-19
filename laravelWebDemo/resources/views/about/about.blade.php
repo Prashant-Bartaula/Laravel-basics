@@ -131,31 +131,141 @@
             </ul>
         </div>
     </div>
+
+    <!-- horizontal line  -->
+    <div class="w-full h-[3px] bg-gray-300 my-20"></div>
+
+    <div class="px-3 lg:px-6 mt-10">
+        <div class="max-w-[1350px] mx-auto text-lg md:text-xl">
+            <h1 class="text-3xl md:text-5xl font-semibold text-blue-500">Introduction</h1>
+            <p style="color: rgb(85, 85, 85)" class="mt-8">
+                Film Development Board (FDB) is established on 30 June 2000 by
+                the Government of Nepal according to the existed Motion Picture
+                (Production, Exhibition and Distribution) Act amended on 20th
+                November 1991.
+            </p>
+            <p style="color: rgb(85, 85, 85)">
+                The constitution of the Film Development Board was with the
+                Government’s deep interest in development and promotion of
+                motion picture sector in Nepal.
+            </p>
+            <p style="color: rgb(85, 85, 85)">
+                It has obviously created an environment of supporting for the
+                promotion of differential aspect of motion picture in Nepal. The
+                Board thus, is indeed a liaison to facilitate the
+                conceptualisation, making, distribution and exhibition of films
+                in Nepal. It also attempts abridging the gap between the film
+                entrepreneurship and the government processes. However, the
+                Board is bound to take care of safety of the people and support
+                to interest for the inspiring films of the common populace. The
+                Board is in reality a balance among the people at large,
+                government and the process of filmmaking. It is therefore, the
+                safeguard of the interest of people, watchdog of government and
+                facilitator of filmmakers.
+            </p>
+            <h3
+                style="
+                    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    color: rgb(51, 51, 51);
+                "
+                class="mt-10 text-2xl"
+            >
+                <span class="text-blue-400">How is the Board?</span>
+            </h3>
+            <p style="color: rgb(85, 85, 85)" class="mt-3">
+                The FDB is constituted as following:
+            </p>
+            <table
+                class="mb-20"
+                border="0"
+                cellspacing="0"
+                cellpadding="1"
+                style="
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(51, 51, 51);
+                "
+            >
+                <tbody>
+                    <tr>
+                        <td width="125">• Chairperson</td>
+                        <td width="230">Government of Nepal Nominee</td>
+                    </tr>
+                    <tr>
+                        <td width="125">• Member</td>
+                        <td width="230">
+                            Representative, Ministry of Information and
+                            Communications (MoIC)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="125">• Member</td>
+                        <td width="230">
+                            Representative, Ministry of Finance (MoF)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="125">• Members</td>
+                        <td width="230">
+                            Three MoIC nominees from among the persons of film
+                            sector
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="125">• Member-Secretary</td>
+                        <td width="230">Under-Secretary, MoIC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
 <!-- timeline content sidebar -->
-<div class="absolute top-0 left-0 w-screen h-screen overflow-hidden z-100" id="timeline-content-wrapper">
+<div
+    class="absolute top-0 left-0 w-screen h-screen overflow-hidden z-100"
+    id="timeline-content-wrapper"
+>
     <!-- overlay -->
     <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
-    <div class="relative flex flex-col float-right items-center overflow-scroll gap-7 w-full md:max-w-[500px] h-full bg-gray-900 text-white px-7 md:px-15 py-20" id="timeline-content-sidebar">
+    <div
+        class="relative flex flex-col float-right items-center overflow-scroll gap-7 w-full md:max-w-[500px] h-max bg-gray-900 text-white px-7 md:px-15 py-20"
+        id="timeline-content-sidebar"
+    >
         <h1 id="timeline-content-title" class="text-2xl text-start"></h1>
         <h3 id="date" class="text-lg text-start"></h3>
 
         <div class="h-1 bg-gray-500 w-full"></div>
-        
+
         <div id="timeline-content-image" class="w-full mx-auto">
-            <img src="" alt="random-img" class="w-full max-w-[350px] mx-auto h-[300px] object-cover">
+            <img
+                src=""
+                alt="random-img"
+                class="w-full max-w-[350px] mx-auto h-[300px] object-cover"
+            />
         </div>
         <div id="timeline-content-hidden-content"></div>
 
         <!-- close button -->
-        <button class="absolute top-5 right-5 z-10" id="timeline-content-close-button">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        <button
+            class="absolute top-5 right-5 z-10"
+            id="timeline-content-close-button"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                />
             </svg>
         </button>
     </div>
-
 </div>
 @endsection @push('scripts') @vite(['resources/js/about.js']) @endpush
