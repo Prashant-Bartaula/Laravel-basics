@@ -28,7 +28,7 @@
     <nav class="px-3 my-7 md:px-5 py-3 bg-blue-100 text-blue-400 rounded-lg font-[500] text-xl overflow-hidden md:overflow-visible" id="navbar">
                     <!-- hamburger  -->
                      <div class="md:hidden flex justify-end">
-                         <button class="cursor-pointer shadow-none!" ><img src="{{ asset('images/hamburger.svg') }}" alt="hamburger" class="w-8 h-8" id="hamburger"></button>
+                         <button id="hamburger-no-style" class="cursor-pointer shadow-none! text-white" ><img src="{{ asset('images/hamburger.svg') }}" alt="hamburger" class="w-8 h-8" id="hamburger"></button>
                      </div>                     
 
         <ul class="h-0 md:h-fit flex flex-col items-start md:flex-row gap-7 transition-all duration-300 ease-linear" id="navbar-item-wrapper">
