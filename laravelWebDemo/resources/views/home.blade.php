@@ -4,7 +4,7 @@
 
 {{-- @section Used in a child view to define what should go into the sections created by @yield in the layout.  --}}
 
-@section('title', 'Home page') @section('hero')
+@section('title', 'Home page') @section('content')
 <style>
     #herosection {
         background-image: url('{{ asset("/images/herosection.webp") }}');
@@ -404,3 +404,12 @@
  </div>
 
 @endsection
+ <script>
+    window.noticeData = @json($noticesData);
+  </script>
+
+
+<!-- push can be used to add page specific scripts along with @stack('scripts') in main blade -->
+@push('scripts')
+    @vite(['resources/js/homepage.js'])
+@endpush

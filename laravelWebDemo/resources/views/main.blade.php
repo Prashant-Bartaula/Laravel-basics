@@ -9,7 +9,12 @@
     {{--@yield is a blade special syntax that allows you to inject clean, dynamic code.  Used in a layout file to define a "placeholder" section where content from other templates will be injected. Like we will use about page inside this page blade with @section and @extendes syntax --}}
 
     <title>@yield('title')</title>
-    @vite(['./resources/css/global.css', './resources/js/homepage.js', './resources/js/swiper.js'])
+    <!-- to include global css and js we use vite -->
+    @vite(['./resources/css/global.css', './resources/js/swiper.js', './resources/js/navbar.js'])
+
+    <!-- to include page specific css and js we use stack  -->
+    @stack('scripts');
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- foe default styling use swiper css  -->
@@ -25,14 +30,12 @@
     @include('navbar')
     
     <main>
-        @yield('hero')
+        @yield('content')
     </main>
     
     @include('footer')
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        window.noticeData=@json($noticesData);
-    </script>
+ 
 </body>
 </html>
