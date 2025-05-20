@@ -38,7 +38,7 @@
                 <div class="custom-dropdown hidden transition-all duration-150 ease-in-out absolute top-3 left-25 md:top-7 rounded-xl md:left-0  bg-blue-200 z-10 overflow-hidden">
                     <ul class="flex flex-col gap-3 text-nowrap text-blue-400 py-2">
                         <li class="cursor-pointer relative hover:bg-blue-300 hover:text-blue-500 px-3 py-1"><a href="/about/introduction">Introduction</a></li>
-                        <li class="cursor-pointer relative hover:bg-blue-300 hover:text-blue-500 px-3 py-1"><a href="#">Ex. members</a></li>
+                        <li class="cursor-pointer relative hover:bg-blue-300 hover:text-blue-500 px-3 py-1"><a href="/about/exmembers">Ex. members</a></li>
                         <li class="cursor-pointer relative hover:bg-blue-300 hover:text-blue-500 px-3 py-1"><a href="#">Ex. charipersons</a></li>
                     </ul>
                 </div>
@@ -49,7 +49,7 @@
                     <ul class="flex flex-col gap-3 text-nowrap text-blue-400 py-2">
                         <li class="cursor-pointer relative hover:bg-blue-300 hover:text-blue-500 px-3 py-1"><a href="#">Libraries</a></li>
                         <li class="cursor-pointer relative hover:bg-blue-300 hover:text-blue-500 px-3 py-1"><a href="#">Publications</a></li>
-                        <li class="cursor-pointer relative hover:bg-blue-300 hover:text-blue-500 px-3 py-1"><a href="#">Articles</a></li>
+                        <li class="cursor-pointer relative hover:bg-blue-300 hover:text-blue-500 px-3 py-1"><a href="/article">Articles</a></li>
                     </ul>
                 </div>
             </li>

@@ -222,14 +222,14 @@
 
 <!-- timeline content sidebar -->
 <div
-    class="absolute top-0 left-0 w-screen h-screen overflow-hidden z-100"
+    class="absolute top-0 left-0 w-screen h-screen overflow-scroll z-100"
     id="timeline-content-wrapper"
 >
     <!-- overlay -->
     <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
     <div
-        class="relative flex flex-col float-right items-center overflow-scroll gap-7 w-full md:max-w-[500px] h-max bg-gray-900 text-white px-7 md:px-15 py-20"
+        class="relative flex flex-col float-right items-center overflow-scroll gap-7 w-full md:max-w-[500px]  h-max max-h-screen  bg-gray-900 text-white px-7 md:px-15 py-20"
         id="timeline-content-sidebar"
     >
         <h1 id="timeline-content-title" class="text-2xl text-start"></h1>
