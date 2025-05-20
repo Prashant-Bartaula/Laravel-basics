@@ -41,6 +41,7 @@ class AboutController extends Controller
 
     public function exMembers()
     {
-        return view('about.exmembers');
+        
+        return view('about.exmembers', ['exMembers' => ExMember::all()]);
     }
 }
